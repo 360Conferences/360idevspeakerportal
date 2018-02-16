@@ -1,8 +1,9 @@
 
 window.firebaseConfig = window.firebaseConfig || {
-  apiKey: "AIzaSyBox_RvfqnAPxCMZCmAbeE7KEkjQ0Isqa0",
-  authDomain: "andev-app.firebaseapp.com",
-  databaseURL: "https://andev-app.firebaseio.com",
-  storageBucket: "andev-app.appspot.com",
-  messagingSenderId: "190191541520"
+  apiKey: "AIzaSyDt-y5rh5LHEvkyE8AIGhkfvvd9JcUZvks",
+  authDomain: "idev-cfp.firebaseapp.com",
+  databaseURL: "https://idev-cfp.firebaseio.com",
+  projectId: "idev-cfp",
+  storageBucket: "idev-cfp.appspot.com",
+  messagingSenderId: "187705807292"
 };
