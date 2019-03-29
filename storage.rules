@@ -1,11 +1,7 @@
 service firebase.storage {
   match /b/{bucket}/o {
-  	match /{year}/profiles/{profileId} {
-    	allow read: if true;
-    	allow write: if request.resource.contentType.matches('image/.*');
-    }
     match /{allPaths=**} {
-      allow read, write: if request.auth != null;
+      allow read, write: if request.auth!=null;
     }
   }
 }
