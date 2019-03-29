@@ -87,12 +87,23 @@ the schedule.
 Before deploying and testing the app, there are a few site-specific configuration
 elements that need to be in place first:
 
-1.  Update `/.firebaserc` with your project name.
+1.  Initlalize your Firebase project in the root directory using the
+    [Firebase CLI](https://firebase.google.com/docs/cli/).
 
-1.  Customize the base URLs for the Firebase database (`EVENT_ID`) and
-    Firebase storage (`AVATAR_URL`) in `factories.js`.
+1.  Add a `/js/config.js` file with the following attributes:
 
-1.  Customize the values in `/js/config.js`.
+    ```
+    window.__config = window.__config || {};
+    window.__config.firebase = {
+      apiKey: "...",
+      authDomain: "...",
+      databaseURL: "...",
+      storageBucket: "...",
+      messagingSenderId: "..."
+    };
+    window.__config.event = "<event-id>";
+    window.__config.storage = "<storage-bucket>";
+    ```
 
 1.  Create a `config` node at the root of your database URL with the following
     keys:
